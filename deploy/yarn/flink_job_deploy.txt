@@ -1,6 +1,0 @@
-
-YARN Per-Job
-说明：使用该方式执行作业时，作业会提交到一个远端的 YARN 集群。
-
-示例：
-./bin/flink run --target yarn-per-job --python table_api_demo.py

@@ -1,0 +1,13 @@
+stages:
+  - deploy
+
+variables:
+  AZKABAN_PROJECT_NAME: pyspark-data-analysis
+
+prod-azkaban:
+  stage: deploy
+  script:
+    - sh deploy_azkaban.sh $AZKABAN_PROJECT_NAME $USERNAME $PASSWORD
+  when: manual
+  tags:
+    - runner-102-51

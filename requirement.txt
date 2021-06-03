@@ -1,2 +1,0 @@
-apache-flink>=1.12.2
-numpy==1.19.0

@@ -1,5 +1,0 @@
-
-使用该方式执行作业时，作业会提交到 K8s 集群，以 application mode 的方式执行。
-示例：
-./bin/flink run-application \    --target kubernetes-application \    --parallelism 8 \    -Dkubernetes.cluster-id=<ClusterId> \    -Dtaskmanager.memory.process.size=4096m \    -Dkubernetes.taskmanager.cpu=2 \    -Dtaskmanager.numberOfTaskSlots=4 \    -Dkubernetes.container.image=<PyFlinkImageName> \
---pyModule table_api_demo \    --pyFiles file:///path/to/table_api_demo.py

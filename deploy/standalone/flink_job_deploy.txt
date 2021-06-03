@@ -1,5 +1,0 @@
-
-
-说明：使用该方式执行作业时，作业会提交到一个远端的 standalone 集群。
-示例：
-./bin/flink run --jobmanager localhost:8081 --python table_api_demo.py
