@@ -13,7 +13,7 @@ from pyflink.table.udf import udtaf, TableAggregateFunction
 
 class Top2(TableAggregateFunction):
     """
-    Top2
+    Function Top2 With PyFlink1.13 UDTAF
     :param
     :return:
     """
