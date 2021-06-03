@@ -3,9 +3,12 @@
 # -------------------------------------------------------------------------------
 # Name:         Python_UDTAF
 # Description:
+# https://ci.apache.org/projects/flink/flink-docs-master/api/python/pyflink.table.html#pyflink.table.FunctionContext
+# https://ci.apache.org/projects/flink/flink-docs-master/api/python/_modules/pyflink/table/udf.html
 # Author:       orange
 # Date:         2021/6/3
 # -------------------------------------------------------------------------------
+
 from pyflink.common import Row
 from pyflink.table import DataTypes, EnvironmentSettings, StreamTableEnvironment
 from pyflink.table.udf import udtaf, TableAggregateFunction
