@@ -6,8 +6,12 @@
 # Author:       orange
 # Date:         2021/6/3
 # -------------------------------------------------------------------------------
+from __future__ import absolute_import
+
+import logging
 
 from kafka import KafkaProducer
+log = logging.getLogger(__name__)
 
 
 class KafkaMsgProducer:
@@ -36,5 +40,6 @@ class KafkaMsgProducer:
 
 def get_kafka_producer(port, topic):
     producer = KafkaMsgProducer("localhost:%d" % port, topic)
-    producer.connect()  # 建立连接
+    producer.connect()
+    log.info("Kafka Producer创建成功！")
     return producer
