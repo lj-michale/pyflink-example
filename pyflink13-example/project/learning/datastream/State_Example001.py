@@ -33,6 +33,7 @@ class MyMapFunction(MapFunction):
 
 
 def state_access_demo():
+
     # 1. 创建 StreamExecutionEnvironment
     env = StreamExecutionEnvironment.get_execution_environment()
 
@@ -57,4 +58,5 @@ def state_access_demo():
 
 
 if __name__ == '__main__':
+
     state_access_demo()
