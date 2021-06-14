@@ -240,14 +240,15 @@ def get_msg_time(line):
 
 
 # 注册 udf
-t_env.register_function('get_topic', get_topic)
-t_env.register_function('get_ip_src', get_ip_src)
-t_env.register_function('get_ip_host', get_ip_host)
-t_env.register_function('get_user_name', get_user_name)
-t_env.register_function('get_user_group', get_user_group)
-t_env.register_function('get_msg_content', get_msg_content)
-t_env.register_function('get_msg_time', get_msg_time)
-t_env.register_function('get_fake_country', get_fake_country)  # 获得虚假的国家
+t_env.create_temporary_function('get_topic', get_topic)
+t_env.create_temporary_function('get_topic', get_topic)
+t_env.create_temporary_function('get_ip_src', get_ip_src)
+t_env.create_temporary_function('get_ip_host', get_ip_host)
+t_env.create_temporary_function('get_user_name', get_user_name)
+t_env.create_temporary_function('get_user_group', get_user_group)
+t_env.create_temporary_function('get_msg_content', get_msg_content)
+t_env.create_temporary_function('get_msg_time', get_msg_time)
+t_env.create_temporary_function('get_fake_country', get_fake_country)  # 获得虚假的国家
 
 # ########################### 批处理任务 ###########################
 
