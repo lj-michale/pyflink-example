@@ -50,13 +50,14 @@ t = t_env.from_elements([(1, 'Hi', 'Hello'),
                          (7, 'Hi', 'Hello')],
                         ['a', 'b', 'c'])
 
-t_env.execute_sql("""
-       CREATE TABLE my_sink (
-         word VARCHAR,
-         `sum` BIGINT
-       ) WITH (
-         'connector' = 'print'
-       )
+t_env.execute_sql(
+"""
+   CREATE TABLE my_sink (
+     word VARCHAR,
+     `sum` BIGINT
+   ) WITH (
+     'connector' = 'print'
+   )
 """)
 
 result = t.group_by(t.b).flat_aggregate(top2).select("b, a").execute_insert("my_sink")

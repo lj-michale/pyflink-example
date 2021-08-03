@@ -6,6 +6,7 @@
 # Author:       orange
 # Date:         2021/6/14
 # -------------------------------------------------------------------------------
+
 from pyflink.common.typeinfo import Types
 from pyflink.table import DataTypes, EnvironmentSettings, StreamTableEnvironment
 from pyflink.table.expressions import col

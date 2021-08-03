@@ -57,7 +57,7 @@ if __name__ == '__main__':
     t_env = StreamTableEnvironment.create(environment_settings=env_settings)
 
     table = t_env.from_elements([("hello", 1), ("world", 2), ("flink", 3)], ['a', 'b'])
-    table.select(sub_string(table.a, 1, 3))
+    table.select(sub_string(table.a, 1, 3)).p
 
 
 
