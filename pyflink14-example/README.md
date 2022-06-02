@@ -7,4 +7,8 @@
 
 
 
+<img src="docs/pictures/20150414104218310.jpg.source.jpg"> <br>
+
+<h4>备注</h4>
+pip install apache-flink==1.14.4
 
